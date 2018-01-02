@@ -1,5 +1,6 @@
 from flask import Flask
 from taobao import spider
+from threading import Thread
 application = Flask(__name__)
 
 @application.route("/")
@@ -7,7 +8,7 @@ def hello():
     key ="nike"
     num =0
     fileName=""
-    thread = Thread(target = spider(num,key,fileName))
+    thread = Thread(target = spider, args = (num,key,fileName))
     thread.start()
 #    spider(num,key,fileName)
     return "Hello World!"
