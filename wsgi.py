@@ -10,7 +10,7 @@ def hello():
     fileName=""
     thread = Thread(target = spider, args = (num,key,fileName))
     thread.start()
-    thread.join()
+#    thread.join()
 #    spider(num,key,fileName)
     return "Hello World!"
 
