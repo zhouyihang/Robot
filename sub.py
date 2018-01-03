@@ -1,5 +1,20 @@
 from taobao import spider
+import sys
+import getopt
 
+def Usage():
+    print ('艾斯卡尔  taobao-spider 使用指南:')
+    print ('    -h    --help:    显示帮助信息.')
+    print ('    -v    --ver:    显示脚本版本')
+    print ('    -k    --key:    搜索关键词，默认 iphone7')
+    print ('    -n    --num:    搜索页数，每页包含44条商品数据，如输入2，那说明会抓取2*44条商品数据')
+    print ('    -f    --file:    获取的文件保存位置，默认为D:\iphone.txt')
+    print ('使用实例：')
+    print ('python taobao.py -k 滑板鞋 -n 5 -f D:\huaban.txt')
+
+def Version():
+    print ('python-spider 1.0.0')
+    
 def main(argv):
     try:
         opts, args = getopt.getopt(argv[1:], 'hvk:n:f:', ['help', 'version', 'key=', 'num=', 'file='])
