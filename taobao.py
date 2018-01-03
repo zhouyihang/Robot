@@ -93,6 +93,7 @@ def spider(num,keyWord,fileName):
             print(" 第 " + str(current) + " 条商品数据 -- 总进度：" + str('%.2f'%((current/allcount)*100))+"%")
 #            try:
 #                file.write(str(k*44+i+1)+' 商品ID：'+pid[i]+' &&& '+' 商品名称：'+title[i]+' &&& '+'价格：'+price[i]+' &&& '+'地址：'+loc[i]+' &&& '+'销量：'+sales[i]+' &&& '+'好评：'+positive+' &&& '+'中评：'+middle+' &&& '+'差评：'+negative+'\n')
+                 print(str(k*44+i+1)+' 商品ID：'+pid[i]+' &&& '+' 商品名称：'+title[i]+' &&& '+'价格：'+price[i]+' &&& '+'地址：'+loc[i]+' &&& '+'销量：'+sales[i]+' &&& '+'好评：'+positive+' &&& '+'中评：'+middle+' &&& '+'差评：'+negative+'\n')
 #            except: 
 #                file.write(str(k*44+i+1)+' 商品ID：'+pid[i]+' &&& '+' 商品名称：'+title[i]+' &&& '+'价格：'+price[i]+' &&& '+'地址：'+loc[i]+' &&& '+'销量：'+"0人付款"+' &&& '+'好评：'+positive+' &&& '+'中评：'+middle+' &&& '+'差评：'+negative+'\n')
 #    print (pb(1,1))
