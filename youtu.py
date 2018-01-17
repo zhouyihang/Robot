@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 # http://open.youtu.qq.com/#/develop/api-ocr-general
 # github.com/se4
-###腾讯优图通用OCR
-###识别率超高、抗干扰强、免费。接口申请
-###ocr = Youtu('app_id', 'secret_id', 'secret_key')
-###resp = ocr.get_text('3.png')
 
 import os
 import time
@@ -57,6 +53,10 @@ class Youtu(object):
 
 
 """
+###腾讯优图通用OCR
+###识别率超高、抗干扰强、免费。接口申请
+###ocr = Youtu('app_id', 'secret_id', 'secret_key')
+###resp = ocr.get_text('3.png')
 接口申请：http://open.youtu.qq.com/
 程序返回的是文本，若要作为字典使用，记得使用eval()方法
 开发者QQ号可以使用默认值，变量名遵循官方的写法
